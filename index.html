@@ -12,15 +12,21 @@
           height: 32px;
           width: 32px;
       }
+      div.buttons-panel {
+          background: black;
+      }
       div.player {
+          display: flex;
+          flex-direction: column;
           width: 800px;
-          height: 600px;
+          height: 500px;
           box-shadow:  0 0 20px rgba(0,0,0,0.5);
       }
       div.video-container {
-          width: 100%;
-          height: 100%;
+          display: flex;
+          flex-grow: 1;
       }
+
     </style>
   </head>
   <body>
@@ -28,7 +34,7 @@
 
     <div id="player" class="player">
       <div class="js-video-container video-container"></div>
-      <div style="background: black; border-style: none">
+      <div class="buttons-panel">
         <button class="js-play-button player-button"><i class="fa fa-play" aria-hidden="true"></i></button>
         <button class="js-pause-button player-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
       </div>
