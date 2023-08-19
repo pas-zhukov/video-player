@@ -2,6 +2,8 @@
 
 Вёрстка видеоплеера, за основу взята java-script библиотека [video-player-jslib](https://github.com/devmanorg/video-player-jslib).
 
+Демо плеера на GithubPages: https://pas-zhukov.github.io/video-player/.
+
 # Необходимые зависимости
 
 Первым делом, скачайте код:
