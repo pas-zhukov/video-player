@@ -4,6 +4,9 @@
 
 Демо плеера на GithubPages: https://pas-zhukov.github.io/video-player/.
 
+![image](https://github.com/pas-zhukov/video-player/assets/117192371/27d96529-149c-4c16-a4db-b07fa50c0f6f)
+
+
 # Необходимые зависимости
 
 Первым делом, скачайте код:
