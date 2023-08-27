@@ -11,11 +11,15 @@
           cursor: pointer;
           color: white;
           background-color: transparent;
-          font-size: 20px;
-          height: 32px;
+          font-size: 21px;
+          height: 37px;
           width: 32px;
-          margin: 5px;
+          margin: 5px 5px 5px 3px;
       }
+      .mute-button {
+          font-size: 18px;
+      }
+
       .buttons-panel {
           display: flex;
           flex-direction: row;
@@ -24,8 +28,8 @@
       .player {
           display: flex;
           flex-direction: column;
-          width: 800px;
-          height: 500px;
+          width: 888px;
+          height: 666px;
           box-shadow:  0 0 20px rgba(0,0,0,0.5);
       }
       .video-container {
@@ -43,7 +47,7 @@
       <div class="buttons-panel">
         <button class="js-play-button player-button"><i class="fa fa-play" aria-hidden="true"></i></button>
         <button class="js-pause-button player-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
-        <button class="js-mute-button player-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+        <button class="js-mute-button player-button mute-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
         <button class="js-volume-button player-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
         <div style="flex-grow: 1"></div>
         <button class="js-fullscreen-button player-button"><i class="fa-solid fa-expand"></i></button>
