@@ -5,6 +5,9 @@
     <title>Видеоплеер</title>
     <link type="image/x-icon" href="./favicon.svg" rel="shortcut icon">
     <link type="Image/x-icon" href="./favicon.svg" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style type="text/css">
       .player-button {
           border-style: none;
@@ -36,6 +39,15 @@
           display: flex;
           flex-grow: 1;
       }
+      .time {
+          border-style: none;
+          background-color: transparent;
+          color: white;
+          font-family: 'Roboto', sans-serif;
+          font-size: 18px;
+
+          margin: 12px 0 5px 2px;
+      }
 
     </style>
   </head>
@@ -49,7 +61,13 @@
         <button class="js-pause-button player-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
         <button class="js-mute-button player-button mute-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
         <button class="js-volume-button player-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+        <div class="time">
+          <span class="js-current-time"></span>
+        </div>
         <div style="flex-grow: 1"></div>
+        <div class="time">
+          <span class="js-duration"></span>
+        </div>
         <button class="js-fullscreen-button player-button"><i class="fa-solid fa-expand"></i></button>
       </div>
     </div>
