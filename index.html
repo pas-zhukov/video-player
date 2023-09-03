@@ -8,30 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet">
   </head>
   <body>
 
-    <div id="player" class="player">
-      <div class="js-video-container video-container"></div>
-      <div class="buttons-panel">
-        <button class="js-play-button player-button"><i class="fa fa-play" aria-hidden="true"></i></button>
-        <button class="js-pause-button player-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
-        <button class="js-mute-button player-button mute-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
-        <button class="js-volume-button player-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
-        <div class="time">
-          <span class="js-current-time"></span>
-        </div>
-        <div class="progress-bar">
-          <div class="js-progress progress-line" style="background-color: black;">
-            <div class="js-progress-slider progress-line" style="background-color: #f8104d;"></div>
-            <div class="dot"><span></span></div>
+    <div id="player" class="vp-player">
+      <div class="js-video-container vp-video-container"></div>
+      <div class="vp-control-panel">
+        <button class="js-play-button vp-control-panel__button"><i class="fa fa-play" aria-hidden="true"></i></button>
+        <button class="js-pause-button vp-control-panel__button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
+        <button class="js-mute-button vp-control-panel__button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+        <button class="js-volume-button vp-control-panel__button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+
+        <div class="vp-control-panel__progress-bar">
+          <div class="vp-control-panel__progress-bar__time">
+            <span class="js-current-time"></span>
+          </div>
+          <div class="js-progress vp-control-panel__progress-bar__progress-line-wrapper" style="background-color: black;">
+            <div class="js-progress-slider vp-control-panel__progress-bar__progress-line" style="background-color: #f8104d;"></div>
+            <div class="vp-control-panel__progress-bar__progress-line__dot"><span></span></div>
+          </div>
+          <div class="vp-control-panel__progress-bar__time">
+            <span class="js-duration"></span>
           </div>
         </div>
-        <div class="time">
-          <span class="js-duration"></span>
-        </div>
-        <button class="js-fullscreen-button player-button"><i class="fa-solid fa-expand"></i></button>
+
+        <button class="js-fullscreen-button vp-control-panel__button"><i class="fa-solid fa-expand"></i></button>
       </div>
     </div>
 

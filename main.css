@@ -1,68 +1,79 @@
-.player-button {
-    border-style: none;
-    cursor: pointer;
-    color: white;
-    background-color: transparent;
-    font-size: 20px;
-    height: 35px;
-    width: 35px;
-    margin: 5px 5px 5px 3px;
-}
-
-.buttons-panel {
-    display: flex;
-    flex-direction: row;
-    background: black;
-}
-.player {
+.vp-player {
     display: flex;
     flex-direction: column;
     width: 800px;
     height: 600px;
     box-shadow:  0 0 20px rgba(0,0,0,0.5);
 }
-.video-container {
-    display: flex;
-    flex-grow: 1;
-}
-.time {
-    display: flex;
-    border-style: none;
-    background-color: transparent;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    .vp-video-container {
+        display: flex;
+        flex-grow: 1;
+    }
+    .vp-control-panel {
+        display: flex;
+        flex-direction: row;
+        background: black;
+        align-items: center;
+        height: 45px;
+    }
+        .vp-control-panel__button {
+            align-items: center;
+            border-style: none;
+            cursor: pointer;
+            color: white;
+            background-color: transparent;
+            font-size: 20px;
+            height: 35px;
+            width: 35px;
+        }
+        .vp-control-panel__progress-bar {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            height: 20px;
+            flex-grow: 1;
+            margin-right: 3px;
+            margin-left: 3px;
 
-    margin: 12px 0 5px 2px;
-}
-.progress-bar {
-    cursor: pointer;
-    height: 21px;
-    flex-grow: 1;
-    margin: 21px 10px 5px 10px;
-}
+        }
+            .vp-control-panel__progress-bar__time {
+                display: flex;
+                align-items: center;
+                border-style: none;
+                background-color: transparent;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
 
-.progress-line {
-    display: flex;
-    height: 5px;
-    border-radius: 3px;
-}
-.dot {
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
-    height: 9px;
-    width: 9px;
-    background-color: #f8104d;
-    border-radius: 50%;
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 300ms;
-    margin: -5px 0 5px -7px;
-    box-shadow: 0 0 20px rgba(0,0,0,1);
-}
+            }
+            .vp-control-panel__progress-bar__progress-line-wrapper {
+                display: flex;
+                height: 5px;
+                border-radius: 3px;
+                flex-grow: 1;
+                margin-left: 9px;
+            }
+                .vp-control-panel__progress-bar__progress-line {
+                    display: flex;
+                    height: 5px;
+                    border-radius: 3px;
+                }
+                .vp-control-panel__progress-bar__progress-line__dot {
+                    border-style: solid;
+                    border-color: white;
+                    border-width: 3px;
+                    height: 9px;
+                    width: 9px;
+                    background-color: #f8104d;
+                    border-radius: 50%;
+                    opacity: 0;
+                    transition-property: opacity;
+                    transition-duration: 300ms;
+                    margin: -5px 0 5px -7px;
+                    box-shadow: 0 0 20px rgba(0,0,0,1);
+                }
 
-.progress-bar:hover .dot {
+.vp-control-panel__progress-bar:hover .vp-control-panel__progress-bar__progress-line__dot {
     transition-property: opacity;
     transition-duration: 300ms;
     opacity: 1;
