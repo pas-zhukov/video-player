@@ -8,85 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <style type="text/css">
-      .player-button {
-          border-style: none;
-          cursor: pointer;
-          color: white;
-          background-color: transparent;
-          font-size: 21px;
-          height: 37px;
-          width: 32px;
-          margin: 5px 5px 5px 3px;
-      }
-      .mute-button {
-          font-size: 18px;
-      }
-
-      .buttons-panel {
-          display: flex;
-          flex-direction: row;
-          background: black;
-      }
-      .player {
-          display: flex;
-          flex-direction: column;
-          width: 888px;
-          height: 666px;
-          box-shadow:  0 0 20px rgba(0,0,0,0.5);
-      }
-      .video-container {
-          display: flex;
-          flex-grow: 1;
-      }
-      .time {
-          display: flex;
-          border-style: none;
-          background-color: transparent;
-          color: white;
-          font-family: 'Roboto', sans-serif;
-          font-size: 18px;
-
-          margin: 12px 0 5px 2px;
-      }
-      .progress-bar {
-          cursor: pointer;
-          height: 21px;
-          flex-grow: 1;
-          margin: 21px 10px 5px 10px;
-      }
-
-      .progress-line {
-          display: flex;
-          height: 5px;
-          border-radius: 3px;
-      }
-      .dot {
-          border-style: solid;
-          border-color: white;
-          border-width: 3px;
-          height: 9px;
-          width: 9px;
-          background-color: #f8104d;
-          border-radius: 50%;
-          opacity: 0;
-          transition-property: opacity;
-          transition-duration: 300ms;
-          margin: -5px 0 5px -7px;
-          box-shadow: 0 0 20px rgba(0,0,0,1);
-      }
-
-      .progress-bar:hover .dot {
-          transition-property: opacity;
-          transition-duration: 300ms;
-          opacity: 1;
-      }
-
-
-    </style>
+    <link href="main.css" rel="stylesheet">
   </head>
   <body>
-
 
     <div id="player" class="player">
       <div class="js-video-container video-container"></div>
