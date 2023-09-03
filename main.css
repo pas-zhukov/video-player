@@ -52,11 +52,13 @@
                 border-radius: 3px;
                 flex-grow: 1;
                 margin-left: 9px;
+                background-color: black;
             }
                 .vp-control-panel__progress-bar__progress-line {
                     display: flex;
                     height: 5px;
                     border-radius: 3px;
+                    background-color: #f8104d;
                 }
                 .vp-control-panel__progress-bar__progress-line__dot {
                     border-style: solid;
